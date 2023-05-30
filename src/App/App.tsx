@@ -1,21 +1,19 @@
 import React from "react";
-import Grid from "@mui/material/Grid";
 import "./App.css";
-import { Player } from "./components/player/Player";
 import { SideBar } from "./components/sideBar/SideBar";
-import { Box, Container, CssBaseline, createTheme } from "@mui/material";
+import { Home } from "./components/home/Home";
+import { Box, CssBaseline } from "@mui/material";
 import { ThemeProvider } from "@emotion/react";
 import { defaultTheme } from "./styles/defaultTheme";
 
 function App() {
- 
-
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Box sx={{ display: "flex" }}>
+      <Box sx={{ display: "flex", flexDirection: "column" }}>
         <CssBaseline />
         <SideBar />
       </Box>
+      <Home />
     </ThemeProvider>
   );
 }
