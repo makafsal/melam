@@ -10,6 +10,7 @@ import {
   ListSubheader,
   Toolbar,
 } from "@mui/material";
+import "./SideNav.css";
 
 export const SideNav = (props: { onClose: () => void }) => {
   return (
@@ -27,7 +28,7 @@ export const SideNav = (props: { onClose: () => void }) => {
         </IconButton>
       </Toolbar>
       <List subheader={<ListSubheader>Menu</ListSubheader>}>
-        <ListItem>
+        <ListItem className="active">
           <ListItemButton>
             <ListItemIcon>
               <Home />

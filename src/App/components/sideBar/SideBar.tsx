@@ -2,14 +2,9 @@ import React from "react";
 import logo from "../../../assets/logo_horizontal.svg";
 import "./SideBar.css";
 import AppBar from "@mui/material/AppBar";
-import {
-  Box,
-  Drawer,
-  IconButton,
-  Toolbar
-} from "@mui/material";
+import { Box, Drawer, IconButton, Toolbar } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { SideNav } from "../sideNav/sideNav";
+import { SideNav } from "../sideNav/SideNav";
 
 export const SideBar = () => {
   const [open, setOpen] = React.useState(false);
@@ -43,8 +38,8 @@ export const SideBar = () => {
         onClose={() => toggleDrawer()}
         PaperProps={{
           sx: {
-            color: "#cbcbcb",
-            opacity: '0.75'
+            color: "#999999",
+            opacity: "0.75",
           },
         }}
       >

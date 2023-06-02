@@ -1,0 +1,18 @@
+.MuiListItem-root.active::before {
+  content: "";
+  display: block;
+  height: 40px;
+  width: 5px;
+  background-color: #f98c3e;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px #f98c3e;
+}
+
+.MuiListItem-root.active .MuiListItemButton-root {
+  box-shadow: 10px 0px 15px #15151a;
+  border-radius: 10px;
+  color: #fff;
+}

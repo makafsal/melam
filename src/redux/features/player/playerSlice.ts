@@ -3,7 +3,7 @@ import type { RootState } from '../../store'
 
 // Define a type for the slice state
 interface PlayerState {
-  isPlaying: boolean
+  isPlaying: boolean;
 }
 
 // Define the initial state using that type
